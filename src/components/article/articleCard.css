@@ -1,0 +1,45 @@
+.article-card {
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: drop-shadow(0px 2px 2px black);
+}
+
+.text-block {
+  width: 320px;
+  background-color: #09347B;
+  margin: 0 10px 10px 10px;
+  color: white;
+  text-align: center;
+}
+
+.article-card img {
+  max-width: 320px;
+  background-color: #09347B;
+}
+
+.text-block .title {
+  padding: 5px 10px 0px 10px;
+  font-size: 20px;
+}
+
+.text-block .description {
+
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.article-info {
+  display: flex;
+  font-size: 0.85em;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.vertical-centered {
+  display: flex;
+  align-items: center;
+}

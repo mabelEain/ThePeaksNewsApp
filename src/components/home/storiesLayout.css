@@ -1,0 +1,20 @@
+.container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    margin-left: 10px;
+}
+
+.news-container {
+    padding-top: 20px;
+}
+
+.articles-section {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+}

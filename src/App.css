@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  width: 45em;
+  display: grid;
+  gap: 1em;
+  margin: 3em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
+  min-height: calc(100vh - 100px);
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1 {
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.content button {
+  margin-right: 20px;
+  padding: 3px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  background-color: #09347B;
+  color: white;
+  text-transform: uppercase;
+}
+
+.content select {
+  margin-right: 9vw;
+  width: 130px;
+  padding: 5px;
+}
+
+body {
+  height: 90vh;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header"
+    "main main main main ";
+}
+
+main {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.loading {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  height: 8vh;
+  margin: auto;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  background-color: #09347B;
 }
