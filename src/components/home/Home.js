@@ -17,7 +17,7 @@ function Home(props){
 
       useEffect(() => {
           getTopStories();
-          setSectionName("culture")
+         //  setSectionName("culture")
           getOtherStories(sectionName);
           // eslint-disable-next-line
       },[orderBy]);

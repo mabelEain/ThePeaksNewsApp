@@ -18,14 +18,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Technologies Used
 
-### ReactJS
+#### ReactJS
 
-### Axios
+#### Axios
 
-### CSS
+#### CSS
 
-### React Hook
+#### React Hook
 
-### Context
+#### Context
 
-### Enjoy exploring my project!
+### Enjoy with my project!

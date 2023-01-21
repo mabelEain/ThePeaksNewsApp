@@ -18,7 +18,8 @@ const App = () => {
           <NavBar />
           <Routes>
               <Route path="/" element={<Home name={"Top Stories"}/>} />
-              <Route path="/search" element={<SearchResult name={"Search Result"}/>}/>
+              <Route path="/search/:search"  element={<SearchResult name={"Search Result"}/>}/>
+              {/* <Route path="/search" element={<SearchResult name={"Search Result"}/>}/>  */}
               <Route path="/bookmark" element={<BookMarks name={"All BookMark"}/>}/>
               <Route path="/article-detail/:sectionName/:id" element={<ArticleDetail />}/>
           </Routes>

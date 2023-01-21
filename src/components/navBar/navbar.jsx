@@ -1,25 +1,27 @@
-import React, { useContext} from 'react';
-import logo from "../../assets/Logo_White.png";
-import SearchBox from './searchBox';
-import './nav.css';
+import React, { useContext, useRef} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import logo from "../../assets/Logo_White.png";
+import searchIcon from "../../assets/search-icon@2x.svg";
 import { NewsContext } from '../../context/NewsContext';
+import './nav.css';
+
+
 
 const NavBar = () => {
-    const { query,setQuery, getSearchStories } = useContext(NewsContext);
+    const {getSearchStories } = useContext(NewsContext);
     const navigate = useNavigate();
+    const searchRef = useRef();
 
-    const handleSearch = query => {
-        setQuery(query);
-        console.log(query)
-        getSearchStories(query);
-        navigate("/search")
-        // eslint-disable-next-line
-      };
-
-    const handleClickOutside = () => {
-        setQuery('');
-        // eslint-disable-next-line
+    const searchHandler = (e) => {
+        e.preventDefault();
+        if ((searchRef.current.value) !== ""){
+            getSearchStories(searchRef.current.value);
+            navigate(`/search/${searchRef.current.value}`);
+            searchRef.current.value = "";
+        }else {
+           console.log("There is no value");
+        }
+       
       };
 
         return (
@@ -30,10 +32,16 @@ const NavBar = () => {
                         <img src={logo} className="brand-logo" alt="logo" />
                     </Link>
                     </div>
-                    
-                    <SearchBox 
-                        
-                        query={query} onChange={handleSearch} onSearchClear={handleClickOutside}/>
+                    <div className='search'>
+                        <form onSubmit={searchHandler}>
+                        <input
+                        ref={searchRef}
+                        placeholder="Search all news"
+                        type="text"
+                        />
+                        <button><img src={searchIcon} alt="search"/></button>
+                    </form>
+                    </div>
                 </div>
              </nav>
             

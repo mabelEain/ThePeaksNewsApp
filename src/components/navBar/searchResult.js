@@ -5,8 +5,9 @@ import { NewsContext } from '../../context/NewsContext';
 import '../home/storiesLayout.css';
 import Spinner from '../utils/Spinner';
 
+
 const SearchResult = (props) => {
-    const { loading,searchStories, query, getSearchStories } = useContext(NewsContext);
+    const { loading,searchStories, query, getSearchStories} = useContext(NewsContext);
     const {orderBy, setOrderBy} = useContext(NewsContext);
     const navigate = useNavigate();
 
@@ -32,15 +33,15 @@ const SearchResult = (props) => {
         <div className='container'>
             <div className="news-container">
               <div className="articles-section">
-                  {
-                    loading? <Spinner />:
-                    ( 
-                      searchStories.map((item,i) => (
-                      <Link to={`/article-detail/${item.sectionName}/${i}`} state={item} key={item.id}>
-                        <ArticleCard key={item.id} item={item}/>
-                      </Link>
-                    )))
-                  }
+              {
+                  loading? <Spinner />:
+                  ( 
+                    searchStories.map((item,i) => (
+                    <Link to={`/article-detail/${item.sectionName}/${i}`} state={item} key={item.id}>
+                      <ArticleCard key={item.id} item={item}/>
+                    </Link>
+                  )))
+                }
               </div>
             </div>
           </div>
