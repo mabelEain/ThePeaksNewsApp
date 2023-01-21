@@ -19,6 +19,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 ## Technologies Used
 
 #### ReactJS
+<<<<<<< HEAD
 
 #### Axios
 
@@ -27,5 +28,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 #### React Hook
 
 #### Context
+=======
+#### Axios
+#### CSS
+#### React Hook
+#### Context
+#### React router
+>>>>>>> refs/remotes/origin/main
 
 ### Enjoy with my project!
