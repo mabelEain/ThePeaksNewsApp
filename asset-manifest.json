@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ThePeaksNewsApp/static/css/main.66c5cd4d.css",
+    "main.js": "/ThePeaksNewsApp/static/js/main.33456bfb.js",
+    "static/media/search-icon@2x.svg": "/ThePeaksNewsApp/static/media/search-icon@2x.90ff003834085d614ff42e406c4d9ffb.svg",
+    "static/media/bookmarkon-icon.svg": "/ThePeaksNewsApp/static/media/bookmarkon-icon.44c48baf18ff9e56bae4def5894233ff.svg",
+    "index.html": "/ThePeaksNewsApp/index.html",
+    "main.66c5cd4d.css.map": "/ThePeaksNewsApp/static/css/main.66c5cd4d.css.map",
+    "main.33456bfb.js.map": "/ThePeaksNewsApp/static/js/main.33456bfb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66c5cd4d.css",
+    "static/js/main.33456bfb.js"
+  ]
+}
