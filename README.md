@@ -1,13 +1,31 @@
-## Available Scripts
+# Available Scripts
 
-In the project directory, you can run:
+## Install Dependencies
+
+Clone or download the repository. Go to project's root directory and run the command
+
+### `npm install`
+
+## Runs the project
 
 ### `npm start`
 
-Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### You can change your API-KEY in Config file
 
-## More Infos will update here...
+### `export const API_KEY = "test";` <= here
+
+## Technologies Used
+
+### ReactJS
+
+### Axios
+
+### CSS
+
+### React Hook
+
+### Context
+
+### Enjoy exploring my project!
